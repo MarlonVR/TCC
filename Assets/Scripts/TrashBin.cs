@@ -7,8 +7,7 @@ public class TrashBin : MonoBehaviour
     public AudioSource errorSoundSource;
     public string trashBinColor;
     private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Ocorreu uma colisao");
+    {  
         if (collision.gameObject.CompareTag("Trash"))
         {
             Trash trashScript = collision.gameObject.GetComponent<Trash>();
